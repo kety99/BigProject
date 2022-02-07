@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<html xmlns:th=http://thymeleaf.org">
+<head th:replace="fragments :: head"></head>
 <body>
-
+<header th:replace="fragments :: header"></header>
+<h4>Register the LogisticCompany:</h4>
+<div class="col-6">
+    <form action="#" th:action="@{/logisticcompanies/create}" th:object="${logisticcompany}" method="post">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input class="form-control" type="text" th:field="*{name}" placeholder="Name" id="name";>
+            <input class="form-control" type="text" th:field="*{MaxNumberOfEmployees}" placeholder="Max numbe of employees" id="MaxNumberOfEmployees">
+        </div>
+        <button type="submit" class="btn btn-primary">Save LogisticCompany</button>
+    </form>
+    <footer th:replace="fragments :: footer"></footer>
 </body>
 </html>
