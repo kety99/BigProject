@@ -12,19 +12,20 @@ import java.util.List;
 
 @Controller
 @AllArgsConstructor
-@RequestMapping ("/logisticcompanies")
+@RequestMapping("/logisticcompanies")
 public class LCController {
     private LCService lcService;
 
     @GetMapping
-    public String getLogisticCompanies (Model model){
-        final List<LogisticCompany> logisticcompanies = lcService.getLogisticCompanies();
-        model.addAttribute( "logisticompanies", logisticcompanies);
+    public String getLogisticCompanies(Model model) {
+        final List<LogisticCompany> logisticCompanies = lcService.getLogisticCompanies();
+        model.addAttribute("logisticompanies", logisticCompanies);
         return "/logisticcompanies/logisticcompanies";
     }
-    @GetMapping
-    public String showCreateLogisticCompanyForm(Model model){
-        model.addAttribute( "logisticcompany", new LogisticCompany());
-        return "/logisticcompanies/create-logisticcomapanies";
+
+    @GetMapping("/create-logisticcompanies")
+    public String showCreateLogisticCompanyForm(Model model) {
+        model.addAttribute("logisticcompany", new LogisticCompany());
+        return "/logisticcompanies/create-logisticcompanies";
     }
 }

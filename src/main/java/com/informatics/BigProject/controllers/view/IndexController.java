@@ -10,9 +10,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @AllArgsConstructor
 @RequestMapping ("/")
 public class IndexController {
+
     @GetMapping
     public String getIndex (Model model){
-        final String welcomeMessage = "Welcome to the Logistic Company Management System my name i Pesho!";
+        final String welcomeMessage = "Welcome to the Logistic Company Management System my!";
         model.addAttribute("welcome", welcomeMessage);
         return "index";
     }
