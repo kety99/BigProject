@@ -1,4 +1,4 @@
-package view;
+package com.informatics.BigProject.controllers.view;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;

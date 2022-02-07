@@ -1,4 +1,4 @@
-package view;
+package com.informatics.BigProject.controllers.view;
 
 import com.informatics.BigProject.data.entities.LogisticCompany;
 import com.informatics.BigProject.service.LCService;
@@ -20,11 +20,11 @@ public class LCController {
     public String getLogisticCompanies (Model model){
         final List<LogisticCompany> logisticcompanies = lcService.getLogisticCompanies();
         model.addAttribute( "logisticompanies", logisticcompanies);
-        return "/logisticcompanies/logisticcompanies.html";
+        return "/logisticcompanies/logisticcompanies";
     }
     @GetMapping
-    public String ShowCreateLogisticCompanyForm(Model model){
+    public String showCreateLogisticCompanyForm(Model model){
         model.addAttribute( "logisticcompany", new LogisticCompany());
-        return "/logisticcomapnies/create-logisticcomapny";
+        return "/logisticcompanies/create-logisticcomapanies";
     }
 }
