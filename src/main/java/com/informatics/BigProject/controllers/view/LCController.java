@@ -28,27 +28,21 @@ public class LCController {
         return "/logisticcompanies/create-logisticcompanies";
     }
 
-    @PostMapping ("/create")
-    public String sreateLogisticCompany(@ModelAttribute LogisticCompany logisticcompany){
-        LCService.create(logisticcompany);
+    @PostMapping("/create")
+    public String sreateLogisticCompany(@ModelAttribute LogisticCompany logisticcompany) {
+        lcService.create(logisticcompany);
         return "redirect:/logisticcompany";
     }
 
     @GetMapping("/edit-logisticcompany/{id}")
-    public String showEditLogisticCompanyForm(Model model, @PathVariable long id, LogisticCompany logisticCompany){
-        LCService.updateLogisticCompany(id, logisticCompany);
-        return "redirect:/logisticcompanies";
-    }
-
-    @GetMapping ("/update/{id}"){
-        public String updateLogisticCompany(Model model, @PathVariable long id, LogisticCompany logistic company);
-        LCService.updateLogisticCompany(id, updateLogisticCompany);
+    public String showEditLogisticCompanyForm(Model model, @PathVariable long id, LogisticCompany logisticCompany) {
+        lcService.updateLogisticCompany(id, logisticCompany);
         return "redirect:/logisticcompanies";
     }
 
     @GetMapping("/delete/{id}")
-    public String processProgramForm(@PathVariable int id){
-        LCService.deleteLogisticCompany(id);
+    public String processProgramForm(@PathVariable int id) {
+        lcService.deleteLogisticCompany(id);
         return "redirect:/logisticcompanies";
     }
 
