@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.Entity;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Getter
@@ -16,4 +17,7 @@ import javax.persistence.Table;
 public class Office extends BaseEntity {
 
     private String address;
+
+    @OneToOne
+    private LogisticCompany logisticCompany;
 }
