@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head th:fragment="head">
+    <title>Logistic Company Management</title>
+    <meta charset="UTF-8">
+    <link href="/css/bootstrap.min.css" rel="stylesheet" th:href="@{css/boostrap.min.css}"/>
+</head>
+<header th:fragment="header">
+    <h1>Logistic Company Management System</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" th:fragment="navigation">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav-item active">
+                <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="schools">List of Logistic Companies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/logisticcompanies/create-logisticcompany">Create Logistic Company</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<footer page-footer font-small>
+    <div class="footer-copyright text-center py-3">© 2022 Copyright:
+         <a href="#" Logistic Company Management System</a>
+    </div>
+</footer>
+
+</html>
