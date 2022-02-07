@@ -29,7 +29,7 @@ public class LCController {
     }
 
     @PostMapping("/create")
-    public String sreateLogisticCompany(@ModelAttribute LogisticCompany logisticcompany) {
+    public String createLogisticCompany(@ModelAttribute LogisticCompany logisticcompany) {
         lcService.create(logisticcompany);
         return "redirect:/logisticcompany";
     }

@@ -3,16 +3,14 @@
 <head th:replace="fragments :: head"></head>
 <body>
 <header th:replace="fragments :: header"></header>
-<h4>Register the LogisticCompany:</h4>
+<h4>Register the Employee:</h4>
 <div class="col-6">
-    <form action="#" th:action="@{/logisticcompanies/create}" th:object="${logisticcompany}" method="post">
+    <form action="#" th:action="@{/employees/create}" th:object="${employee}" method="post">
         <div class="form-group">
             <label for="name">Name</label>
             <input class="form-control" type="text" th:field="*{name}" placeholder="Name" id="name" ;>
-            <input class="form-control" type="text" th:field="*{MaxNumberOfEmployees}"
-                   placeholder="Max number of employees" id="MaxNumberOfEmployees">
         </div>
-        <button type="submit" class="btn btn-primary">Save LogisticCompany</button>
+        <button type="submit" class="btn btn-primary">Save Employee</button>
     </form>
     <footer th:replace="fragments :: footer"></footer>
 </div>

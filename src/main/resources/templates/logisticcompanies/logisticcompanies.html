@@ -12,8 +12,8 @@
         <th>Edit</th>
         <th>Delete</th>
         <tr th:each="logisticcompany : ${logisticcompanies}">
-            <td th:text="${school.id}"></td>
-            <td th:text="${school.name}"></td>
+            <td th:text="${logisticcompany.id}"></td>
+            <td th:text="${logisticcompany.name}"></td>
             <td><a class="btn btn-info" th:href="@{'/logisticcompanies/edit-logisticcompanies/'+${logisticcompany.id}}">Edit</a></td>
             <td><a class="btn btn-danger" th:href="@{'/logisticcompanies/delete'+${logisticcompany.id}}">Delete</a></td>
 
