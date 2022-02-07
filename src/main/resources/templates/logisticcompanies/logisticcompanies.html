@@ -6,7 +6,7 @@
 <h4>Registered LogisticCompanies:</h4>
 <div class="col-6">
     <h3 th:unless="${logisticcompanies} and ${logisticcompanies.size}">There are no logistic companies</h3>
-    <table th:if="$logisticcomapnies.size()>0" class="table table-hover">
+    <table th:if="${logisticcomapnies.size}()>0" class="table table-hover">
         <th>Id</th>
         <th>Name</th>
         <th>Edit</th>
