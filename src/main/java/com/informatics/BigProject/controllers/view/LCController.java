@@ -28,4 +28,5 @@ public class LCController {
         model.addAttribute("logisticcompany", new LogisticCompany());
         return "/logisticcompanies/create-logisticcompanies";
     }
+
 }

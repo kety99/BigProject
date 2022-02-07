@@ -13,7 +13,7 @@ public class IndexController {
 
     @GetMapping
     public String getIndex (Model model){
-        final String welcomeMessage = "Welcome to the Logistic Company Management System my!";
+        final String welcomeMessage = "Welcome to the Logistic Company Management System!";
         model.addAttribute("welcome", welcomeMessage);
         return "index";
     }

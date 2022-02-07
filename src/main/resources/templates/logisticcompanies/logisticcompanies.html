@@ -2,7 +2,7 @@
 <html xmlns:th=http://thymeleaf.org">
 <head th:replace="fragments :: head"></head>
 <body>
-<!--<header th:replace="fragments :: header"></header>-->
+<header th:replace="fragments :: header"></header>
 <h4>Registered LogisticCompanies:</h4>
 <div class="col-6">
     <h3 th:unless="${logisticcompanies} and ${logisticcompanies.size}">There are no logistic companies</h3>
