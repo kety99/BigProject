@@ -1,6 +1,5 @@
 package com.informatics.BigProject.controllers.view;
 
-import com.informatics.BigProject.data.entities.Client;
 import com.informatics.BigProject.data.entities.Office;
 import com.informatics.BigProject.service.OfficeService;
 import lombok.AllArgsConstructor;

@@ -2,7 +2,6 @@ package com.informatics.BigProject.controllers.view;
 
 import com.informatics.BigProject.data.entities.Package;
 import com.informatics.BigProject.service.PackageService;
-import com.sun.xml.bind.v2.runtime.reflect.Lister;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
