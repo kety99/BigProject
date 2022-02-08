@@ -19,7 +19,7 @@ public class Client extends BaseEntity{
 
     private String name;
 
-    @OneToMany (mappedBy = "client")
+    @OneToMany(mappedBy = "client")
     private Set<Package> packages;
 
 }

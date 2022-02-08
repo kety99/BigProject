@@ -8,6 +8,7 @@ import lombok.Setter;
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import java.math.BigDecimal;
 
 @Getter
 @Setter
@@ -17,6 +18,12 @@ import javax.persistence.Table;
 public class Package extends BaseEntity{
 
     private boolean paid;
+
+    private BigDecimal price;
+
+    private String addressStart;
+
+    private String addressDestination;
 
     @ManyToOne
     private Client client;
