@@ -7,8 +7,8 @@
 <div class="col-6">
     <form action="#" th:action="@{/office/create}" th:object="${office}" method="post">
         <div class="form-group">
-            <label for="name">Name</label>
-            <input class="form-control" type="text" th:field="*{name}" placeholder="Name" id="name" ;>
+            <label for="address">Address</label>
+            <input class="form-control" type="text" th:field="*{address}" placeholder="Address" id="address" ;>
         </div>
         <button type="submit" class="btn btn-primary">Save Office</button>
     </form>

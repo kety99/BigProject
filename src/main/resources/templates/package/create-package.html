@@ -7,8 +7,12 @@
 <div class="col-6">
     <form action="#" th:action="@{/package/create}" th:object="${ackage}" method="post">
         <div class="form-group">
-            <label for="name">Name</label>
-            <input class="form-control" type="text" th:field="*{name}" placeholder="Name" id="name" ;>
+            <label for="addressStart">Where the package is sent from</label>
+            <input class="form-control" type="text" th:field="*{addressStart}" placeholder="Address Send" id="addressStart" ;>
+            <label for="addressDestination">Where the package is sent for</label>
+            <input class="form-control" type="text" th:field="*{addressDestination}" placeholder="Address Destination" id="addressDestination" ;>
+            <label for="client">Your name</label>
+            <input class="form-control" type="text" th:field="*{client}" placeholder="Your name" id="client" ;>
         </div>
         <button type="submit" class="btn btn-primary">Save Package</button>
     </form>
