@@ -12,8 +12,6 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @ToString
 public class CreateOfficeDTO {
-    private String name;
-    private int maxNumberOfEmployees;
-    private LocalDate foundationDate;
+    private String address;
 }
 
