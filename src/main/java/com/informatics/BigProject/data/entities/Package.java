@@ -25,6 +25,8 @@ public class Package extends BaseEntity{
 
     private String addressDestination;
 
+    private BigDecimal weight;
+
     @ManyToOne
     private Client client;
 
